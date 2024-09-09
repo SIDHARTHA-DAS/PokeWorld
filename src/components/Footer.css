@@ -1,0 +1,118 @@
+/* Base styling for the footer */
+.pokemon-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Left side (Pokémon brand text) */
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff5722;
+}
+
+.footer-left p {
+  font-size: 16px;
+}
+
+/* Right side (links and social media) */
+.footer-right {
+  text-align: right;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #e64a19; /* Pokémon Yellow */
+}
+
+.footer-social{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #e64a19; /* Pokémon Yellow */
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+/* Responsive design */
+
+/* Mobile (small screens) */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer-links li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Tablet (medium screens) */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Hover effect for social icons */
+.footer-social a {
+  font-size: 20px;
+}
+
+.footer-social a:hover {
+  color: #e64a19; /* Lighter Pokémon yellow on hover */
+}
+
