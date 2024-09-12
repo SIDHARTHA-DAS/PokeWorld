@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,20 +9,20 @@ const NavBar = () => {
   };
   return (
     <nav className="navbar">
-      <div className="navbar-logo">PokeWorld</div>
+      <Link to="/" className="navbar-logo">PokeWorld</Link>
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <a className="navlink" href="#home">
+        <Link to="/" className="navlink" href="/">
           Home
-        </a>
-        <a className="navlink" href="#about">
+        </Link>
+        <Link to="/about" className="navlink" href="/about">
           About
-        </a>
-        <a className="navlink" href="#Pokemon">
+        </Link>
+        <Link to="/Pokemon" className="navlink" href="/Pokemon">
           Pokemon
-        </a>
-        <a className="navlink" href="#contact">
+        </Link>
+        <Link to="/contact" className="navlink" href="/contact">
           Contact
-        </a>
+        </Link>
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
         &#9776;
