@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="hero">
@@ -5,9 +6,9 @@ const HeroSection = () => {
         <div className="hero-content">
           <h1 className="heros">Welcome to PokeWorld</h1>
           <p>Lets Find ToGether The Pokemon You need</p>
-          <a href="#services" className="cta-button">
+          <Link to="/Pokemon" href="/Pokemon" className="cta-button">
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </section>
